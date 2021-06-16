@@ -4,16 +4,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 
-@WebServlet(name = "Home", urlPatterns = {"/home", "/index"})
-public class HomeController extends HttpServlet {
+@WebServlet(name = "feedbacks", urlPatterns = "/feedbacks")
+public class FeedbacksController extends HttpServlet {
 
-    private static final long serialVersionUID = 5510655071091556001L;
+    private static final long serialVersionUID = -3037046973099934324L;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("index.jsp").include(req, resp);
+        req.getRequestDispatcher("feedbacks.jsp").include(req, resp);
     }
 
 }

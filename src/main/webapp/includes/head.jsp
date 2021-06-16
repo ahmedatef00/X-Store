@@ -12,4 +12,4 @@
 <%--<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>--%>
 <%--<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>--%>
 <%--<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>--%>
-<%--<%@ page import="eg.gov.iti.jets.model.Role" %>--%>
+<%--<%@ page import="com.example.demo.model.Role" %>--%>

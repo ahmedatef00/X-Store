@@ -1,4 +1,5 @@
 package com.example.demo.controller;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -6,14 +7,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Home", urlPatterns = {"/home", "/index"})
-public class HomeController extends HttpServlet {
+@WebServlet(name = "about", urlPatterns = "/about")
+public class AboutController extends HttpServlet {
 
-    private static final long serialVersionUID = 5510655071091556001L;
+    private static final long serialVersionUID = -2110285316363601101L;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("index.jsp").include(req, resp);
+        req.getRequestDispatcher("about.jsp").include(req, resp);
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
+    }
 }
